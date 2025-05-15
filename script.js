@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       modalUsername.textContent = media.dataset.username || "@dummy_user";
       modalIcon.src = media.dataset.icon || "default-icon.jpg";
-      modalCaption.textContent = media.dataset.caption || "";
+      modalCaption.innerHTML = media.dataset.caption || "";
       modalLikes.textContent = `いいね！${media.dataset.likes || 0}件`;
       modalDate.textContent = `・${media.dataset.date || ""}`;
 
